@@ -300,7 +300,7 @@ export const benefits = [
   {
     id: "5",
     title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    text: "At Sudama, we don’t just adapt to technology—we reinvent with it. Every day, our team harnesses cutting-edge advancements in AI, cloud computing, and automation to refine our solutions, ensuring they’re faster, smarter, and more intuitive.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
