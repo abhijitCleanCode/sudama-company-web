@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --font-sora: "Sora", sans-serif;
+    --font-code: "Source Code Pro", monospace;
+    --font-grotesk: "Space Grotesk", sans-serif;
+    color-scheme: dark;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+@layer base {
+    body {
+        @apply font-sans bg-n-8 text-n-1 text-base;
+    }
+}
+
+.rotate-45 {
+    @apply rotate-[45deg];
+}
+
+.rotate-90 {
+    @apply rotate-[90deg];
+}
+
+.rotate-135 {
+    @apply rotate-[135deg];
+}
+
+.rotate-180 {
+    @apply rotate-[180deg];
+}
+
+.rotate-225 {
+    @apply rotate-[225deg];
+}
+
+.rotate-270 {
+    @apply rotate-[270deg];
+}
+
+.rotate-315 {
+    @apply rotate-[315deg];
+}
+
+.rotate-360 {
+    @apply rotate-[360deg];
+}
+
+.-rotate-45 {
+    @apply rotate-[-45deg];
+}
+
+.-rotate-90 {
+    @apply rotate-[-90deg];
+}
+
+.-rotate-135 {
+    @apply rotate-[-135deg];
+}
+
+.-rotate-180 {
+    @apply rotate-[-180deg];
+}
+
+.-rotate-225 {
+    @apply rotate-[-225deg];
+}
+
+.-rotate-270 {
+    @apply rotate-[-270deg];
+}
+
+.-rotate-315 {
+    @apply rotate-[-315deg];
+}
+
+.-rotate-360 {
+    @apply rotate-[-360deg];
+}
+
+/* Contact section */
+.contact-container {
+    max-width: 40rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-top: 3rem;
+    position: relative;
+    z-index: 10;
+}
+
+@media (min-width: 640px) {
+    .contact-container {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+.field-label {
+    font-size: 1.125rem;
+    /* lg */
+    color: #9ca3af;
+    /* white-600 */
+}
+
+.field-input {
+    width: 100%;
+    padding: 0.5rem 1.25rem;
+    background-color: #2C2C2C;
+    /* black-300 */
+    min-height: 3.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.field-input::placeholder {
+    color: #6B7280;
+    /* white-500 */
+}
+
+.field-btn {
+    padding: 0.5rem 1.25rem;
+    background-color: #3D3D3D;
+    /* black-500 */
+    min-height: 3rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.125rem;
+    gap: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.field-btn_arrow {
+    width: 0.625rem;
+    height: 0.625rem;
+    filter: brightness(0);
+    filter: invert(1);
+}
