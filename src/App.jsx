@@ -11,6 +11,7 @@ import Roadmap from "./components/Roadmap";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Footer />
       </div>
 
+      <Toaster />
       <ButtonGradient />
     </>
   );

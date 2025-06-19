@@ -42,7 +42,9 @@ const Hero = () => {
             ups and enterprises — transforming healthcare, and turning bold
             ideas into reality.
           </p>
-          <Button href="/pricing">Get started</Button>
+          <Button href="/pricing" white={true}>
+            Get started
+          </Button>
         </div>
 
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
@@ -96,7 +98,7 @@ const Hero = () => {
             />
           </div>
 
-          <BackgroundCircles />
+          {/* <BackgroundCircles /> */}
         </div>
 
         <CompanyLogo className="hidden relative z-10 mt-20 lg:block" />

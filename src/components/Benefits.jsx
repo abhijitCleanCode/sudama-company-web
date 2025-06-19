@@ -17,7 +17,7 @@ const Benefits = () => {
         />
 
         <div className="flex flex-wrap gap-10 mb-10">
-          {benefits.map((item) => (
+          {benefits?.map((item) => (
             <div
               key={item.id}
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
@@ -27,17 +27,15 @@ const Benefits = () => {
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
                 <h5 className="h5 mb-5">{item.title}</h5>
-                <p className="body-2 mb-6 text-n-3">{item.text}</p>
+                <p className="body-2 mb-6 text-n-3">{item.purpose}</p>
+                {/* <p className="body-2 mb-6 text-n-3">{item.text}</p> */}
+                <ul className="list-disc pl-5 space-y-2 text-n-3 [&>li::marker]:text-[#8B5DFF] mb-6">
+                  {item?.text?.map((value, index) => (
+                    <li key={index}>{value}</li>
+                  ))}
+                </ul>
                 <div className="flex items-center mt-auto">
-                  <img
-                    src={item.iconUrl}
-                    alt={item.title}
-                    width={48}
-                    height={48}
-                  />
-                  <p className="ml-auto font-code font-bold text-xs text-n-1 tracking-wider">
-                    Explore More
-                  </p>
+                  <p>Starting at ₹29,999</p>
                   <Arrow />
                 </div>
               </div>

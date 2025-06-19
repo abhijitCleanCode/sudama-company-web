@@ -5,6 +5,9 @@ import Heading from "./Heading";
 import Arrow from "../assets/svg/Arrow";
 import ClipPath from "../assets/svg/ClipPath";
 import { work } from "../constants";
+import { book_my_doct } from "../assets";
+import { Link } from "react-router-dom";
+import { AiFillEye, AiFillGithub } from "react-icons/ai";
 
 const Work = () => {
   return (
@@ -12,28 +15,30 @@ const Work = () => {
       <div className="container">
         <Heading className="md:max-w-4xl" title="Sudama's Work" />
 
-        <div className="flex flex-wrap gap-10 mb-10">
+        <div className="flex flex-wrap justify-center items-center gap-10 mb-10">
           {work.map((item) => (
             <div
               key={item.id}
-              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
+              className="work-content flex flex-col justify-center items-center m-[2rem] p-[1rem] rounded-[0.5rem] cursor-pointer transition-all delay-150 ease hover:shadow-md w-full md:w-[470px] md:p-[1.25rem] md:rounded-[0.75rem]"
             >
-              <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
-                <h5 className="h5 mb-5">{item.title}</h5>
-                <p className="body-2 mb-6 text-n-3">{item.text}</p>
-                <div className="flex items-center mt-auto">
-                  {/* <img
-                    src={item.iconUrl}
-                    alt={item.title}
-                    width={48}
-                    height={48}
-                  /> */}
-                  <p className="ml-auto font-code font-bold text-xs text-n-1 tracking-wider">
-                    Explore More
-                  </p>
-                  <Arrow />
+              <Link to={item.url} target="_blank" rel="noreferrer">
+                <div className="flex justify-center items-center w-full h-[230px] md:h-[350px] relative">
+                  {item.projectImg ? (
+                    <img
+                      src={item.projectImg}
+                      alt="in progress, coming soon"
+                      className="w-full h-full rounded-[0.5rem] object-cover"
+                    />
+                  ) : (
+                    <p className="grid-subtext">In progress, coming soon</p>
+                  )}
                 </div>
-              </div>
+
+                <div className="p-[0.5rem] w-full relative flex flex-col justify-center items-center mt-4">
+                  <h3 className="grid-headtext">{item.title}</h3>
+                  <p className="grid-subtext">{item.text}</p>
+                </div>
+              </Link>
             </div>
           ))}
         </div>

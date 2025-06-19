@@ -148,3 +148,38 @@
     filter: brightness(0);
     filter: invert(1);
 }
+
+.work-content {
+    border: 1px solid #2C2C2C;
+    /* black-300 */
+    border-radius: 0.5rem;
+    background-color: #1E1E1E;
+    /* black-200 */
+}
+
+
+.work-content_container:hover {
+    background-color: #2C2C2C;
+    /* black-300 */
+}
+
+.work-content_bar.group-hover {
+    background-color: #3D3D3D;
+    /* black-500 */
+}
+
+.grid-headtext {
+    font-size: 1.25rem;
+    /* xl */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-family: "General Sans", sans-serif;
+}
+
+.grid-subtext {
+    color: #afb0b6;
+    font-size: 1rem;
+    /* base */
+    font-family: "General Sans", sans-serif;
+}

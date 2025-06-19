@@ -75,6 +75,10 @@ import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
+// project
+import book_my_doct from "./projects/book_my_doct.png";
+import school_mgmt from "./projects/school_mgmt.png";
+
 export {
   Brainwave,
   check,
@@ -144,4 +148,8 @@ export {
   instagram,
   telegram,
   twitter,
+
+  // project
+  book_my_doct,
+  school_mgmt,
 };

@@ -30,10 +30,7 @@ const Pricing = () => {
           </div>
         </div>
 
-        <Heading
-          tag="Get Started with Sudama Sol"
-          title="Pay once, use forever."
-        />
+        <Heading tag="Faster, Smarter and Better" title="Agile Development" />
 
         <div className="relative">
           <PricingList />
