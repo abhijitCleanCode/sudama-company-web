@@ -42,9 +42,9 @@ const Hero = () => {
             ups and enterprises — transforming healthcare, and turning bold
             ideas into reality.
           </p>
-          <Button href="/pricing" white={true}>
+          {/* <Button href="/pricing" white={true}>
             Get started
-          </Button>
+          </Button> */}
         </div>
 
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">

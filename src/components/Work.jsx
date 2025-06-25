@@ -11,7 +11,7 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 
 const Work = () => {
   return (
-    <Section crosses>
+    <Section crosses id="projects">
       <div className="container">
         <Heading className="md:max-w-4xl" title="Sudama's Work" />
 

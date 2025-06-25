@@ -40,42 +40,30 @@ import {
 
 export const navigation = [
   {
-    id: "0",
-    title: "Home",
-    url: "#home",
+    id: 0,
+    title: "Advantage",
+    url: "#advantage",
   },
   {
-    id: "1",
-    title: "About",
-    url: "/about",
+    id: 1,
+    title: "approach",
+    url: "#approach",
   },
   {
-    id: "2",
-    title: "Services",
-    url: "/services",
-  },
-  {
-    id: "3",
+    id: 2,
     title: "Pricing",
-    url: "/pricing",
+    url: "#pricing",
   },
   {
-    id: "4",
+    id: 3,
     title: "Projects",
-    url: "/projects",
+    url: "#projects",
   },
-  // {
-  //   id: "4",
-  //   title: "New account",
-  //   url: "#signup",
-  //   onlyMobile: true,
-  // },
-  // {
-  //   id: "5",
-  //   title: "Sign in",
-  //   url: "#login",
-  //   onlyMobile: true,
-  // },
+  {
+    id: 4,
+    title: "Contact",
+    url: "#contact",
+  },
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];

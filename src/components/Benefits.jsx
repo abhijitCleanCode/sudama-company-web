@@ -9,7 +9,7 @@ import { GradientLight } from "./design/Benefits";
 
 const Benefits = () => {
   return (
-    <Section id="features">
+    <Section id="pricing">
       <div className="container relative z-2">
         <Heading
           className="md:max-w-4xl"
