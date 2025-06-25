@@ -4,18 +4,8 @@ import Section from "./Section";
 import Heading from "./Heading";
 import { benefits } from "../constants";
 import Arrow from "../assets/svg/Arrow";
-// import ClipPath from "../assets/svg/ClipPath";
+import ClipPath from "../assets/svg/ClipPath";
 import { GradientLight } from "./design/Benefits";
-
-const ClipPath = () => {
-  return (
-    <svg className="block" width={0} height={0}>
-      <clipPath id="benefits" clipPathUnits="objectBoundingBox">
-        <path d="M0.079,0 h0.756 a0.079,0.083,0,0,1,0.058,0.026 l0.086,0.096 A0.079,0.083,0,0,1,1,0.179 V0.917 c0,0.046,-0.035,0.083,-0.079,0.083 H0.079 c-0.044,0,-0.079,-0.037,-0.079,-0.083 V0.083 C0,0.037,0.035,0,0.079,0" />
-      </clipPath>
-    </svg>
-  );
-};
 
 const Benefits = () => {
   return (
@@ -32,7 +22,7 @@ const Benefits = () => {
               key={item.id}
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
               style={{
-                backgroundImage: `url(${item.backgroundUrl})`,
+                backgroundImage: "url(./src/assets/benefits/card-1.svg)",
               }}
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
