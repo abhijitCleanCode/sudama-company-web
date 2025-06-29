@@ -55,7 +55,7 @@ const Services = () => {
 
             <Generating
               text="Sudama Super Devs: Where Genius Speaks Your Language"
-              className="absolute left-4 right-4 border border-n-1/10 lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2"
+              className="hidden md:block absolute left-4 right-4 border border-n-1/10 lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2"
             />
           </div>
 

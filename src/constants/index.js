@@ -6,6 +6,7 @@ import {
   benefitImage2,
   book_my_doct,
   chromecast,
+  coming_soon,
   disc02,
   discord,
   discordBlack,
@@ -15,6 +16,7 @@ import {
   framer,
   homeSmile,
   instagram,
+  katlicherra_project_img,
   notification2,
   notification3,
   notification4,
@@ -40,6 +42,11 @@ import {
 
 export const navigation = [
   {
+    id: 2,
+    title: "Pricing",
+    url: "#pricing",
+  },
+  {
     id: 0,
     title: "Advantage",
     url: "#advantage",
@@ -48,11 +55,6 @@ export const navigation = [
     id: 1,
     title: "approach",
     url: "#approach",
-  },
-  {
-    id: 2,
-    title: "Pricing",
-    url: "#pricing",
   },
   {
     id: 3,
@@ -275,90 +277,105 @@ export const pricing = [
 
 export const benefits = [
   {
-    id: "0",
-    title: "Custom Software Development",
-    purpose: "Transform your Ideas into scalable digital product.",
-    text: [
+    id: 0,
+    heading: "Custom Software Development",
+    description: "Transform your Ideas into scalable digital product.",
+    listHeading: "What will you get",
+    list: [
       "Enterprise Resource Planning (ERP) systems",
       "Customer Relationship Management (CRM) software",
       "Inventory management systems",
       "Workflow automation tools",
     ],
-    itemPrice: "₹24,999",
-    backgroundUrl: "./src/assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    price: 35999,
+    discount: 10,
+    // backgroundUrl: "./src/assets/benefits/card-1.svg",
+    // iconUrl: benefitIcon1,
+    // imageUrl: benefitImage2,
   },
   {
-    id: "1",
-    title: "Web Development",
-    purpose:
+    id: 1,
+    heading: "Web Development",
+    description:
       "Build a scalable, sleek, high-performance web solutions to showcase your business.",
     // text: "Need a sleek, responsive website to showcase your brand (starting from ₹19,999) or a high-performance mobile app to engage users (starting from ₹34,999). Please contact us for more details.",
-    text: [
+    listHeading: "What will you get",
+    list: [
       "E-Commerce Platforms with inventory management",
       "SaaS/PaaS Development",
       "Management System",
       "Custom Content Management System Development",
     ],
-    itemPrice: "₹19,999",
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    price: 29999,
+    discount: 10,
+    // backgroundUrl: "./src/assets/benefits/card-2.svg",
+    // iconUrl: benefitIcon2,
+    // imageUrl: benefitImage2,
     // light: true,
   },
   {
-    id: "2",
-    title: "Mobile App Development",
-    purpose:
+    id: 2,
+    heading: "Mobile App Development",
+    description:
       "Build high-performance and platform optimise apps that connect business to users anywhere",
-    text: [
+    listHeading: "What will you get",
+    list: [
       "Cross-Platform Apps: Cost-effective, unified codebase solutions with Flutter or React Native.",
       "Modern UI/UX to seamless functionality",
     ],
-    itemPrice: "₹34,999",
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    price: 49999,
+    discount: 10,
   },
   {
-    id: "3",
-    title: "Cloud Solutions",
-    purpose:
+    id: 3,
+    heading: "Cloud Solutions",
+    description:
       "Tired of tech headaches? Our Cloud Solutions lift your business to new heights—seamless, secure, and smarter than ever!",
-    text: [
+    listHeading: "What will you get",
+    list: [
       "Cloud migration (AWS, Azure, Google Cloud)",
       "Serverless architecture. Serverless? More like stress-less!",
       "DevOps & CI/CD pipelines",
       "Scalability and cost-efficiency",
     ],
-    itemPrice: "₹29,999",
-    backgroundUrl: "./src/assets/benefits/card-4.svg",
+    price: 29999,
+    discount: 10,
   },
   {
-    id: "4",
-    title: "IT Consulting & Digital Transformation",
-    purpose:
+    id: 4,
+    heading: "IT Consulting & Digital Transformation",
+    description:
       "Transform your business with our IT consulting and digital transformation services.",
-    text: [
+    listHeading: "What will you get",
+    list: [
       "Technology roadmap planning",
       "Legacy system modernization",
       "Digital strategy for startups/enterprises",
       "Process automation (RPA, AI)",
     ],
-    itemPrice: "₹29,999",
-    backgroundUrl: "./src/assets/benefits/card-5.svg",
+    price: 39999,
+    discount: 10,
   },
   {
-    id: "5",
-    title: "Video Editing",
-    purpose: "Bring Your Story to Life – Frame by Frame!",
-    text: [
-      "60-Second Reels (From ₹2000)",
+    id: 5,
+    heading: "Video Editing",
+    description: "Bring Your Story to Life – Frame by Frame!",
+    listHeading: "we will pay you. Yup you header right. That's Sudama",
+    list: [
+      "60-Second Reels (From 499)",
       "Seamless Cuts + Trendy Transitions",
-      "Motion Graphics (@ ₹500/sec)",
+      "Motion Graphics (@ 60/sec)",
       "BG Music & SFX that pop",
     ],
-    itemPrice: "₹2000",
-    backgroundUrl: "./src/assets/benefits/card-6.svg",
+    price: 559,
+    discount: 10,
+  },
+  {
+    id: 6,
+    heading: "Logo Designing",
+    description: "Design a Logo that speaks for your business",
+    price: 220,
+    discount: 10,
   },
 ];
 
@@ -415,20 +432,20 @@ export const work = [
     title: "Dating App",
     text: "Find your perfect match effortless. With smart matchmaking algorithms, you'll discover compatible partners based on your interests and preferences. Enjoy seamless real-time chatting, and spice up your profile by uploading short videos. Swipe, chat, and meet like never before!",
     url: "https://dating-app.vercel.app/",
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    projectImg: coming_soon,
   },
   {
     id: 3,
     title: "News App",
     text: "Stay informed effortlessly with our smart news app, designed to deliver personalized updates. Filter news by categories, and set preferences to see only what matters most. Get location-based alerts, ensuring you never miss what’s happening around you. With real-time highlights, breaking news reaches you instantly—anytime. Your world, your news, at your fingertips",
     url: "https://news-app.vercel.app/",
-    backgroundUrl: "./src/assets/benefits/card-4.svg",
+    projectImg: coming_soon,
   },
-  // {
-  //   id: 4,
-  //   title: "Read Colab",
-  //   text: "ReadColab is a real-time, live collaborative document-sharing application built with Next.js. Designed to facilitate seamless teamwork, ReadColab allows multiple users to edit and collaborate on documents simultaneously, with changes instantly reflected across all devices. Key Features: Real-Time Collaboration, Document Sharing.",
-  //   url: "https://read-colab.vercel.app/",
-  //   backgroundUrl: "./src/assets/benefits/card-5.svg",
-  // },
+  {
+    id: 4,
+    title: "Katlichera Central School",
+    text: "Developed a modern, user-friendly website for the school, designed to enhance communication and engagement within the school community. With sleek and responsive design, the site keep students, parents and stuff up to date with the latest information.",
+    url: "https://www.katlicherracentralschool.in/",
+    projectImg: katlicherra_project_img,
+  },
 ];

@@ -78,6 +78,8 @@ import twitter from "./socials/twitter.svg";
 // project
 import book_my_doct from "./projects/book_my_doct.png";
 import school_mgmt from "./projects/school_mgmt.png";
+import katlicherra_project_img from "./projects/katlicherra_project_img.png";
+import coming_soon from "./projects/coming_soon.png";
 
 export {
   Brainwave,
@@ -152,4 +154,6 @@ export {
   // project
   book_my_doct,
   school_mgmt,
+  katlicherra_project_img,
+  coming_soon,
 };

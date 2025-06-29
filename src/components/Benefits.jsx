@@ -6,18 +6,19 @@ import { benefits } from "../constants";
 import Arrow from "../assets/svg/Arrow";
 import ClipPath from "../assets/svg/ClipPath";
 import { GradientLight } from "./design/Benefits";
+import ServiceCard from "./benefits/ServiceCard";
 
 const Benefits = () => {
   return (
     <Section id="pricing">
-      <div className="container relative z-2">
+      <div className="">
         <Heading
           className="md:max-w-4xl"
           title="Sudama - Place Where Your Business Meets Tomorrow's Tech"
         />
 
-        <div className="flex flex-wrap gap-10 mb-10">
-          {benefits?.map((item) => (
+        <div className="flex flex-wrap justify-center p-4 gap-4">
+          {/* {benefits?.map((item) => (
             <div
               key={item.id}
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
@@ -29,7 +30,7 @@ const Benefits = () => {
                 <h5 className="h5 mb-5">{item.title}</h5>
                 <p className="body-2 mb-6 text-n-3">{item.purpose}</p>
                 {/* <p className="body-2 mb-6 text-n-3">{item.text}</p> */}
-                <ul className="list-disc pl-5 space-y-2 text-n-3 [&>li::marker]:text-[#8B5DFF] mb-6">
+          {/* <ul className="list-disc pl-5 space-y-2 text-n-3 [&>li::marker]:text-[#8B5DFF] mb-6">
                   {item?.text?.map((value, index) => (
                     <li key={index}>{value}</li>
                   ))}
@@ -41,15 +42,15 @@ const Benefits = () => {
               </div>
 
               {/* visual effect */}
-              {item.light && <GradientLight />}
+          {/* {item.light && <GradientLight />} */}
 
-              {/* image appear behind the card on each hover */}
-              <div
+          {/* image appear behind the card on each hover */}
+          {/*<div
                 className="absolute inset-0.5 bg-n-8"
                 style={{ clipPath: "url(#benefits)" }}
               >
                 {/* show it only on hover */}
-                <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
+          {/*<div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
                   <img
                     src={item.imageUrl}
                     alt={item.title}
@@ -61,8 +62,12 @@ const Benefits = () => {
               </div>
 
               {/* allow us to see full rectangle of card */}
-              <ClipPath />
+          {/*<ClipPath />
             </div>
+          ))} */}
+
+          {benefits.map((item) => (
+            <ServiceCard key={item.id} {...item} className="md:max-w-[24rem]" />
           ))}
         </div>
       </div>
